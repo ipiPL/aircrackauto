@@ -72,7 +72,6 @@ if [ $choice == 1 ] || [ $choice == 2 ]; then
             #sudo apt-get update -y && apt-get upgrade -y
             #sudo apt-get install python3-pip -y
         
-        fi
 
 	    echo "[✔] Checking directories..."
 	    if [ -d "$INSTALL_DIR" ]; then
@@ -120,4 +119,5 @@ elif [ $choice == 0 ] && [ $choice != 1 ] && [ $choice != 2 ]; then
     exit
 else
     echo -e $RED "[!] Select a Valid Option and Try Again [!]"
+fi
 fi
